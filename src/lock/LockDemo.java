@@ -15,7 +15,7 @@ public class LockDemo {
 
     private int count;
 
-    public void increament() {
+    public void increment() {
         /**
          * tryLock()一调用就会立即返回，如果拿到锁   --> true <br>
          *                            如果拿不到锁 --> false
@@ -44,7 +44,7 @@ public class LockDemo {
         @Override
         public void run() {
             for (int i = 0; i < 1000; i++) {
-                ld.increament();
+                ld.increment();
             }
         }
     }
